@@ -70,7 +70,11 @@ function deleteFromObjectByKey(object, key){
       expect(obj['prop']).toBe(1)
     })
   })*/
-
+//fifth change 
+function estructivelyDeleteFromObjectByKey(object, key){
+  var deletedKey= delete object.key
+  return deletedKey;
+}
   describe('destructivelyDeleteFromObjectByKey(object, key)', function() {
     it('returns object without the delete key/value pair', function() {
       var obj = { prop: 1 }
